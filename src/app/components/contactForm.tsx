@@ -1,0 +1,71 @@
+'use client'
+import React, { useState, ChangeEvent, FormEvent } from 'react';
+
+const ContactForm = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    message: '',
+  });
+
+  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    // Handle form submission here (e.g., send data to a server or API).
+    // You can use FormData API to send data as needed.
+  };
+
+  return (
+    <div className="flex gap-8">
+      <div className="text-black p-11" style={{ flexBasis: '25%' }}>
+        <p className="font-bold">P.O Box 19533 - 00100</p>
+        <p className="font-bold">Nairobi, Kenya</p>
+        <p className="font-bold">cali@cali.institute</p>
+      </div>
+      <div className="p-9" style={{ flexBasis: '75%' }}>
+        <h2 className="text-3xl font-semibold mb-4">Contact Us</h2>
+        <form onSubmit={handleSubmit}>
+          <div className="mb-4">
+            <label htmlFor="name" className="block text-black font-bold mb-2">
+              Name
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              className="w-full h-12 border rounded-md px-3 py-2 text-black"
+              required
+            />
+          </div>
+          <div className="mb-4">
+            <label htmlFor="message" className="block text-black font-bold mb-2">
+              Message
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              rows={6} // Increase the number of rows for a larger input area
+              className="w-full h-56 border rounded-md px-3 py-2 text-black"
+              required
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            className="bg-green-400 text-white font-bold py-2 px-4 rounded hover:bg-orange-400"
+          >
+            Send email
+          </button>
+        </form>
+      </div>
+    </div>
+  );
+};
+
+export default ContactForm;
