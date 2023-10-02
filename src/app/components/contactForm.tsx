@@ -58,7 +58,7 @@ const ContactForm = () => {
           </div>
           <button
             type="submit"
-            className="bg-green-400 text-white font-bold py-2 px-4 rounded hover:bg-orange-400"
+            className="bg-red-400 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded "
           >
             Send email
           </button>

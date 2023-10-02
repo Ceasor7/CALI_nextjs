@@ -29,7 +29,7 @@ const teamMembers = [
 function Programs() {
   return (
     <div className="container mx-auto py-8">
-      <h1 className="text-2xl justify-center font-semibold mb-4">Programs</h1>
+      <h1 className="flex justify-center text-2xl font-semibold mb-4">Programs</h1>
       <div className="grid grid-cols-2 gap-4">
         <p className="p-4  rounded shadow-lg">
           1. CALI's research program aims to support evidence-based
@@ -65,7 +65,7 @@ function Programs() {
         </div>
       </div>
       <div className=" p-8">
-      <h1 className="text-2xl justify-center font-semibold mb-4">Our Team</h1>
+      <h1 className="flex justify-center text-2xl font-semibold mb-4">Our Team</h1>
       <div className="flex flex-wrap justify-center">
         {teamMembers.map((member, index) => (
           <TeamMember key={index} {...member} />

@@ -33,7 +33,8 @@ const Description = () => {
           <p className="text-black">CALI's vision is to create a dynamic and inclusive arts sector that promotes creativity, cultural diversity, and social and economic development. We envision a future in which the arts are valued and supported as a vital component of Kenyan society, and in which individuals and organizations working in the arts sector have the skills, resources, and support they need to achieve their full potential.</p>
         </div>
       </div>
-      <h1 className="text-2xl font-semibold mb-4">Core Values</h1>
+      <div className="p-8 mb-4 rounded-lg shadow-md">
+      <h1 className="flex justify-center items-center text-2xl font-semibold mb-4">Core Values</h1>
       <ul className="list-disc p-4 grid grid-cols-3 gap-4">
         <li> Integrity</li>
         <li> Excellence</li>
@@ -46,6 +47,8 @@ const Description = () => {
       We strive for excellence in all aspects of our work, encouraging and supporting creative thinking and innovation. We promote diversity, equity, and inclusion in the arts, creating a welcoming and inclusive environment for all participants in our programs and initiatives. CALI believes in the power of collaboration and partnership to achieve common goals, taking responsibility for their actions and decisions and working transparently and accountability. Finally, we recognize the importance of sustainability in the arts sector and promote practices that ensure the long-term viability and resilience of the arts in Kenya.
 
       </p>
+      </div>
+      
     </div>
   );
 };
