@@ -34,26 +34,23 @@ function Header() {
               />
             </a>
           </Link>
-          <div className="flex items-center space-x-4 flex-1 justify-end w-full">
-  <Link href="/description">
-    <span className="cursor-pointer text-black transition duration-300 hover:bg-red-400 hover:rounded-lg hover:py-2 hover:px-4">
-      Description
-    </span>
-  </Link>
-  <Link href="/programs">
-    <span className="cursor-pointer text-black transition duration-300 hover:bg-red-400 hover:rounded-lg hover:py-2 hover:px-4">
-      Programs
-    </span>
-  </Link>
-  <Link href="/contact">
-    <span className="cursor-pointer text-black transition duration-300 hover:bg-red-400 hover:rounded-lg hover:py-2 hover:px-4">
-      Contact Us
-    </span>
-  </Link>
-</div>
-
-
-
+          <div className="md:flex items-center space-x-4 flex-1 justify-end w-full">
+            <Link href="/description">
+              <span className="cursor-pointer text-black transition duration-300 hover:bg-red-400 hover:rounded-lg hover:py-2 hover:px-4">
+                Description
+              </span>
+            </Link>
+            <Link href="/programs">
+              <span className="cursor-pointer text-black transition duration-300 hover:bg-red-400 hover:rounded-lg hover:py-2 hover:px-4">
+                Programs
+              </span>
+            </Link>
+            <Link href="/contact">
+              <span className="cursor-pointer text-black transition duration-300 hover:bg-red-400 hover:rounded-lg hover:py-2 hover:px-4">
+                Contact Us
+              </span>
+            </Link>
+          </div>
         </div>
       </header>
     </>
