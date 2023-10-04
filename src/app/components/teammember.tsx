@@ -13,8 +13,8 @@ const TeamMember: React.FC<TeamMemberProps> = ({ name, role, image }) => {
       <div className="relative">
       <Image src="/images/user.svg" width={100} height={150} alt={`${name}'s Picture`} className="w-36 h-36 rounded-full mx-auto" />
       </div>
-      <h1 className="text-xl font-semibold mt-4">{name}</h1>
-      <p className="text-gray-600">{role}</p>
+      <h1 className="text-xl font-cali font-semibold mt-4">{name}</h1>
+      <p className="text-gray-600 font-cali">{role}</p>
     </div>
   );
 };
